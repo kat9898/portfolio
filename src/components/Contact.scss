@@ -1,0 +1,137 @@
+.contactContainer {
+    display: flex;
+    padding: 40px 70px;
+    justify-content: center;
+    background: linear-gradient(90.21deg, #00bc9b -5.91%, #5eaefd 111.58%);
+
+    img {
+        width: 450px;
+        height: 450px;
+        margin-right: 50px;
+    }
+
+    .formContainer {
+        max-width: 700px;
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        input {
+            padding: 15px 20px;
+            border-radius: 15px;
+            border: 1px solid white;
+            background-color: rgba($color: white, $alpha: 0.4);
+            width: 49%;
+            margin-bottom: 10px;
+            font-size: 16px;
+            transition: 0.3s ease-in-out;
+            
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: white;
+                opacity: 1; /* Firefox */
+            }
+              
+            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: white;
+            }
+              
+            &::-ms-input-placeholder { /* Microsoft Edge */
+                color: white;
+            }
+        }
+
+        .incorrextInput {
+            border: 2px solid red;
+        }
+
+        textarea {
+            padding: 15px 20px;
+            border-radius: 15px;
+            border: 1px solid white;
+            background-color: rgba($color: white, $alpha: 0.4);
+            color: white;
+            font-size: 16px;
+            width: 100%;
+            transition: 0.3s ease-in-out;
+            
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: white;
+                opacity: 1; /* Firefox */
+            }
+              
+            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: white;
+            }
+              
+            &::-ms-input-placeholder { /* Microsoft Edge */
+                color: white;
+            }
+        }
+
+        input:focus, textarea:focus {
+            background: rgba(255, 255, 255, 1);
+            color: #121212;
+        }
+
+        button {
+            width: 140px;
+            height: 50px;
+            background-color: white;
+            margin-top: 30px;
+            transition: 0.3s ease-in-out;
+            position: relative;
+            cursor: pointer;
+
+            span {
+                color: rgb(2, 9, 32);
+                font-size: 18px;
+                font-weight: bold;
+                transition: 0.3s ease-in-out;
+                position: relative;
+                z-index: 1;
+            }
+
+            &::before {
+                content: '';
+                background: #444444;
+                width: 0;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+                transition: 0.3s ease-in-out;
+            }
+
+            &:hover {
+                span {
+                    color: #fff;
+                }
+
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .success {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .fail {
+            margin-top: 10px;
+            color: red;
+            width: 100%;
+        }
+    }
+}

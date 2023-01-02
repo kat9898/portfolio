@@ -1,0 +1,54 @@
+.footerContainer {
+    background-color: #121212;
+    padding: 40px 70px;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 155px;
+    }
+
+    .socialIcons {
+        a {
+            width: 42px;
+            height: 42px;
+            background: rgba(217, 217, 217, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            display: inline-flex;
+            border-radius: 50%;
+            margin-left: 8px;
+            align-items: center;
+            justify-content: center;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                background-color: white;
+                transform: scale(0);
+                transition: 0.3s ease-in-out;
+            }
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+
+            .githubImg {
+                transform: scale(1.3);
+            }
+
+            &:hover {
+                &::before {
+                    transform: scale(1);
+                }
+
+                img {
+                    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+                }
+            }
+        }
+    }
+}
