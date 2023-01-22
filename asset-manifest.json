@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.f31b9b5d.css",
+    "main.js": "/portfolio/static/js/main.30e1efa1.js",
+    "static/media/rm373batch2-08.jpg": "/portfolio/static/media/rm373batch2-08.608febcc5867108f259b.jpg",
+    "static/media/—Pngtree—news laptop decoration illustration_4714393.png": "/portfolio/static/media/—Pngtree—news laptop decoration illustration_4714393.f5249b431f879dfb0f72.png",
+    "static/media/Pngtree—man and woman using computer_7557234.png": "/portfolio/static/media/Pngtree—man and woman using computer_7557234.1ec55830556113769ac5.png",
+    "static/media/BeerProject.png": "/portfolio/static/media/BeerProject.5577296a81f7c5443cad.png",
+    "static/media/CentraNo2-Bold.ttf": "/portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/Notes.png": "/portfolio/static/media/Notes.708ea20eabddf9c6cda0.png",
+    "static/media/revicons.eot": "/portfolio/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/portfolio/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/github-svgrepo-com.svg": "/portfolio/static/media/github-svgrepo-com.7a103abab36d1c156bef564fc347b476.svg",
+    "static/media/nav-icon3.svg": "/portfolio/static/media/nav-icon3.72cef43bc93b04f52e29f022ef720f8b.svg",
+    "static/media/logo.svg": "/portfolio/static/media/logo.3c6c479cfa1d154dbfccd4d5f91320f4.svg",
+    "static/media/up-arrow-svgrepo-com (2).svg": "/portfolio/static/media/up-arrow-svgrepo-com (2).cfd278d738e2a2228fed13582bd4a880.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/nav-icon1.svg": "/portfolio/static/media/nav-icon1.dff40ae802524d8fc0cbce3f312abe4f.svg",
+    "main.f31b9b5d.css.map": "/portfolio/static/css/main.f31b9b5d.css.map",
+    "main.30e1efa1.js.map": "/portfolio/static/js/main.30e1efa1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f31b9b5d.css",
+    "static/js/main.30e1efa1.js"
+  ]
+}
