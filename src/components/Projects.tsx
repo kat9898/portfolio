@@ -1,61 +1,46 @@
-import React from 'react'
+import React from 'react';
 import ProjectCard from './ProjectCard';
 import BeerProject from '../assets/img/BeerProject.png';
+import Intelogis from '../assets/img/intelogis.png';
 import SimpleNotes from '../assets/img/Notes.png';
 
 import './Projects.scss';
 
-type Props = {}
+type Props = {
+  projectsRef: React.MutableRefObject<any>;
+};
 
 const Projects = (props: Props) => {
   const projects = [
     {
-      title: "Beer asessment",
-      description: "Design & Development",
-      imgUrl: BeerProject,
-      url: ""
+      title: 'Intelogis - logistic company',
+      description: 'Development',
+      imgUrl: Intelogis,
+      url: 'https://intelogis.ru/',
     },
     {
-      title: "Simple notes",
-      description: "Simple project & Development",
+      title: 'Simple notes',
+      description: 'Simple project & Development',
       imgUrl: SimpleNotes,
-      url: "https://kat9898.github.io/simply-notes/"
+      url: 'https://kat9898.github.io/simply-notes/',
     },
-    {
-      title: "Beer asessment",
-      description: "Design & Development",
-      imgUrl: BeerProject,
-      url: ""
-    },
-    {
-      title: "Beer asessment",
-      description: "Design & Development",
-      imgUrl: BeerProject,
-      url: ""
-    },
-    {
-      title: "Beer asessment",
-      description: "Design & Development",
-      imgUrl: BeerProject,
-      url: ""
-    },
-    {
-      title: "Beer asessment",
-      description: "Design & Development",
-      imgUrl: BeerProject,
-      url: ""
-    }
   ];
 
   return (
-    <section className='projectsContainer'>
+    <section ref={props.projectsRef} className="projectsContainer">
       <h2>Projects</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum labore fugiat nesciunt asperiores consequatur veniam laborum expedita dignissimos aut distinctio. Suscipit quisquam necessitatibus eligendi fugit dolorem magni deserunt id amet?</p>
-      <div className='projects'>
-        {projects.map((project, index) => <ProjectCard key={index} {...project} />)}
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum labore fugiat nesciunt
+        asperiores consequatur veniam laborum expedita dignissimos aut distinctio. Suscipit quisquam
+        necessitatibus eligendi fugit dolorem magni deserunt id amet?
+      </p>
+      <div className="projects">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

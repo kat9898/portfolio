@@ -1,7 +1,9 @@
 .contactContainer {
     display: flex;
     padding: 40px 70px;
+    min-height: 700px;
     justify-content: center;
+    align-items: center;
     background: linear-gradient(90.21deg, #00bc9b -5.91%, #5eaefd 111.58%);
 
     img {
